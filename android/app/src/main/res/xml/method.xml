@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android"
+    android:isDefault="false"
+    android:settingsActivity="app.fiel.ime.SetupActivity"
+    android:supportsSwitchingToNextInputMethod="true">
+    <subtype
+        android:imeSubtypeLocale="es_ES"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true"
+        android:label="@string/subtype_es" />
+    <subtype
+        android:imeSubtypeLocale="ca_ES"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true"
+        android:label="@string/subtype_ca" />
+    <subtype
+        android:imeSubtypeLocale="en_US"
+        android:imeSubtypeMode="keyboard"
+        android:isAsciiCapable="true"
+        android:label="@string/subtype_en" />
+</input-method>

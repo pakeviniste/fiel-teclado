@@ -1,0 +1,46 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "app.fiel.ime"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "app.fiel.ime"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        resources.excludes.add("META-INF/INDEX.LIST")
+    }
+}
+
+tasks.register("copyApkToPublic") {
+    doLast {
+        def apk = file("build/outputs/apk/debug/app-debug.apk")
+        def destDir = file("../../../../public")
+        if (apk.exists() && destDir.exists()) {
+            copy {
+                from apk
+                into destDir
+                rename { "fiel-teclado.apk" }
+            }
+        }
+    }
+}

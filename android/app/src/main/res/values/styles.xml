@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Fiel" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:statusBarColor">@color/kb_bg</item>
+        <item name="android:navigationBarColor">@color/kb_bg</item>
+        <item name="android:windowBackground">@color/kb_bg</item>
+        <item name="android:colorPrimary">@color/kb_paper</item>
+        <item name="android:textColorPrimary">@color/kb_fg</item>
+        <item name="android:textColorSecondary">@color/kb_muted</item>
+    </style>
+
+    <style name="FielKey">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">@drawable/key</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/kb_fg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+</resources>

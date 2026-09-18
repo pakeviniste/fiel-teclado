@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kb_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/app_name"
+            android:textColor="@color/kb_fg"
+            android:textSize="32sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/setup_lead"
+            android:textColor="@color/kb_muted"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.25" />
+
+        <TextView
+            android:id="@+id/step_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/step1"
+            android:textColor="@color/kb_fg"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/field"
+            android:gravity="top"
+            android:hint="@string/hint_key"
+            android:inputType="textMultiLine"
+            android:minHeight="88dp"
+            android:padding="12dp"
+            android:textColor="@color/kb_fg"
+            android:textColorHint="@color/kb_subtle"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_paste"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_ghost"
+                android:text="@string/paste"
+                android:textAllCaps="false"
+                android:textColor="@color/kb_fg" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_solid"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/kb_bg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/step_mic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/step2"
+            android:textColor="@color/kb_fg"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_mic"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_ghost"
+            android:text="@string/allow_mic"
+            android:textAllCaps="false"
+            android:textColor="@color/kb_fg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/step3"
+            android:textColor="@color/kb_fg"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_enable"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_ghost"
+            android:text="@string/enable_ime"
+            android:textAllCaps="false"
+            android:textColor="@color/kb_fg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/step4"
+            android:textColor="@color/kb_fg"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_pick"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_solid"
+            android:text="@string/pick_ime"
+            android:textAllCaps="false"
+            android:textColor="@color/kb_bg" />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_ghost"
+            android:text="@string/test"
+            android:textAllCaps="false"
+            android:textColor="@color/kb_fg" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1.3"
+            android:textColor="@color/kb_muted"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/try_here"
+            android:textColor="@color/kb_fg"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/try_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/field"
+            android:gravity="top"
+            android:hint="@string/try_hint"
+            android:inputType="textMultiLine"
+            android:minHeight="96dp"
+            android:padding="12dp"
+            android:textColor="@color/kb_fg"
+            android:textColorHint="@color/kb_subtle"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

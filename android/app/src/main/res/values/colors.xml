@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="kb_bg">#FF0C0C0B</color>
+    <color name="kb_fg">#FFF3EFE6</color>
+    <color name="kb_muted">#FF9A958C</color>
+    <color name="kb_subtle">#FF6F6B64</color>
+    <color name="kb_key">#FF1C1B18</color>
+    <color name="kb_record">#FFC45C4A</color>
+    <color name="kb_mic_fg">#FF0C0C0B</color>
+    <color name="kb_line">#FF2A2925</color>
+    <color name="kb_paper">#FFF3EFE6</color>
+</resources>

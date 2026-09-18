@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fiel</string>
+    <string name="ime_name">Fiel</string>
+    <string name="subtype_es">Español</string>
+    <string name="subtype_ca">Català</string>
+    <string name="subtype_en">English</string>
+    <string name="hold">Mantén pulsado y habla</string>
+    <string name="space">espacio</string>
+    <string name="settings">Ajustes</string>
+    <string name="switch_ime">Cambiar de teclado</string>
+    <string name="setup_lead">Esto no es una app aislada. Fiel se pone en el conmutador de teclados del teléfono, junto a los emojis y Gboard. El texto entra en WhatsApp, Notas, el correo — donde tengas el cursor.</string>
+    <string name="step1">1. Pega la clave que te da Fiel en la web</string>
+    <string name="step2">2. Permite el micrófono</string>
+    <string name="step3">3. Activa Fiel en Teclados del sistema</string>
+    <string name="step4">4. Elige Fiel con el globo, como cualquier teclado</string>
+    <string name="hint_key">Pega aquí el recuadro completo (JSON) o el enlace fiel://…</string>
+    <string name="paste">Pegar</string>
+    <string name="save">Guardar clave</string>
+    <string name="allow_mic">Permitir micrófono</string>
+    <string name="enable_ime">Abrir teclados del sistema</string>
+    <string name="pick_ime">Elegir teclado ahora</string>
+    <string name="test">Probar conexión</string>
+    <string name="try_here">Prueba: escribe aquí con Fiel</string>
+    <string name="try_hint">Toca aquí, cambia al teclado Fiel con el globo, mantén el micrófono y habla. El texto tiene que aparecer en esta caja — no en otra app.</string>
+</resources>
