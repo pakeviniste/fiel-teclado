@@ -1,14 +1,14 @@
 # Fiel — teclado de voz
 
-Fiel no es una app aislada. Es un **teclado del sistema**. Se pone en el conmutador del teléfono (el globo, junto a los emojis y Gboard). El texto entra en WhatsApp, Notas, Gmail — donde esté el cursor.
+Fiel no es una app aislada. Es un **teclado del sistema**. Vive junto a tus otros teclados. El texto entra en WhatsApp, Notas, el correo — donde esté el cursor.
 
-- Android: IME nativo (`InputMethodService`). Sideload del APK, gratis.
-- iPhone: extensión de teclado. Apple no deja instalar teclados desde una web; hace falta Xcode.
+- Android: IME nativo (`InputMethodService`). APK por sideload, temporal, gratis.
+- iPhone: en camino. Hoy solo Android.
 
 ## Android (el camino que funciona hoy)
 
 1. Instala `fiel-teclado.apk` (Actions → artifacts, o compílalo).
-2. Abre **Fiel**. Pega la clave JSON que te da la web (cuenta + «Teclado»).
+2. Abre el enlace de emparejado que te da la web (`fiel://pair`).
 3. Permite el micrófono.
 4. Ajustes del teléfono → **Sistema → Idiomas e introducción → Teclado virtual → Administrar teclados** → activa **Fiel**.
 5. En cualquier caja de texto, toca el **globo** y elige Fiel.
@@ -21,11 +21,13 @@ cd android
 # APK: app/build/outputs/apk/debug/app-debug.apk
 ```
 
-El APK es de depuración a propósito: se instala sin cuenta de Play. Android avisará «origen desconocido»; es normal.
+El APK es de depuración a propósito: se instala sin cuenta de Play. Android avisará «origen desconocido»; es normal. Sideload temporal, no el canal de producto.
 
 ## iPhone
 
-Apple exige una app contenedora + extensión `UIInputViewController`, con **Permitir acceso total** (red + micro). El código está en `ios/`. Ábrelo en Xcode, firma con tu equipo y instálalo en el aparato. Luego: Ajustes → Teclado → Teclados → Añadir → Fiel.
+En camino. Hoy solo Android.
+
+Quien desarrolle la extensión: el código está en `ios/` (`UIInputViewController`, acceso total para red + micro).
 
 ## Cómo habla con la web
 

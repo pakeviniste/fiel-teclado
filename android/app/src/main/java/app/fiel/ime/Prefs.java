@@ -60,11 +60,11 @@ public final class Prefs {
                 String api = o.optString("api", o.optString("url", ""));
                 String token = o.optString("token", o.optString("key", ""));
                 String lang = o.optString("language", o.optString("lang", "es"));
-                if (token.isEmpty()) return "El JSON no trae token.";
+                if (token.isEmpty()) return "Ese texto no trae clave.";
                 save(c, api, token, lang);
                 return "Clave guardada.";
             } catch (Exception e) {
-                return "JSON ilegible.";
+                return "No pude leer lo pegado.";
             }
         }
 
